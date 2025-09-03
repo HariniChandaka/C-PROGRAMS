@@ -951,6 +951,60 @@ int main()
 
 }
 ```
+## 27.Write a program in C to accept two matrices and check whether they are equal.
+```c
+
+#include<stdio.h>
+int main()
+{
+  int i,j;
+  int rows,cols,flag=1;
+  printf("Enter no. of rows: ");
+  scanf("%d",&rows);
+  printf("Enter no. of columns: ");
+  scanf("%d",&cols);
+  int A[rows][cols],B[rows][cols];
+  printf("Enter elements of first matrix A:\n");
+  for(i=0;i<rows;i++)
+  {
+          for(j=0;j<cols;j++)
+          {
+                  scanf("%d",&A[i][j]);
+
+        }
+  }
+  printf("Enter elements of second matrix B:\n");
+  for(i=0;i<rows;i++)
+  {
+          for(j=0;j<cols;j++)
+          {
+                  scanf("%d",&B[i][j]);
+                 }
+  }
+  for(i=0;i<rows;i++)
+  {
+          for(j=0;j<cols;j++)
+          {
+                  if(A[i][j]!=B[i][j])
+                  {
+
+                          flag=0;
+                          break;}
+
+                  }
+          if(flag==0);
+          break;
+  }
+  if(flag==1)
+  {
+          printf(" matrices are equal");}
+ else{
+                  printf("matrices are not equal");
+          }
+          return 0;
+ }
+```
+
 
 
 
