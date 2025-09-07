@@ -18,3 +18,45 @@ int main()
     }
 }
 ```
+## 2.Write a C program to check whether a given number is even or not?
+```c
+#include <stdio.h>
+int main()
+{
+ int number;
+ printf("Enter your number:");
+ scanf("%d",&number);
+ if(number%2==0)
+{
+    printf("The number is Even \n");
+}
+else if(number%2!=0)
+{
+    printf("The number is odd \n");
+}
+return 0;
+}
+```
+## 3.Write a C program to check whether a given number is positive or negative?
+```c
+#include <stdio.h>
+int main()
+{
+ int number;
+ printf("Enter your number:");
+ scanf("%d",&number);
+ if(number>0)
+{
+    printf("The number is positive \n");
+}
+else if(number<0)
+{
+    printf("The number is negative \n");
+}
+else 
+{
+    printf("The number is zero \n");
+}
+return 0;
+}
+```
