@@ -244,4 +244,29 @@ int main()
     }
 }  
 ```
+## 12.Write a Cprogram to check whether a character is uppercase or lowercase?
+```c
+#include <stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter the character:");
+    scanf(" %c",&ch);
+    if(ch >= 'A' && ch <= 'Z')
+    {
+        printf("The character is uppercase: %c",ch);
+    }
+    else if(ch >= 'a' && ch <= 'z')
+    {
+        printf("The character is lowercase: %c",ch);
+    }
+    else
+    {
+        printf("The character is not an alphabet %c",ch);
+    }
+}
+```
+
+
+
 
