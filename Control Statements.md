@@ -326,4 +326,20 @@ int main()
     }
 }
 ```
+## 15.Write a c program to print even numbers between 1 to 20 using a for loop?
+```c
+int main()
+{
+    int i;
+    printf("Even numbers between 1 to 20 are: \n");
+    for(i=1;i<=20;i++)
+    {
+        if(i%2==0)
+        {
+            printf("%d \n", i);
+        }
+    }
+    return 0;
+}
+
 
