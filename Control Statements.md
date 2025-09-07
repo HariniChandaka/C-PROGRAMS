@@ -305,3 +305,25 @@ int main()
   }
 }
 ```
+## 14.Write a c program to find maximum between two numbers using switch case?
+```c
+#include <stdio.h>
+int main()
+{
+    int a,b,choice;
+    printf("Enter two numbers:");
+    scanf("%d%d",&a,&b);
+    choice=(a>b) ? 1 :((b<a) ? 2 : 0);
+    switch(choice)
+    {
+        case 1:printf("maximum number is: %d\n",a);
+               break;
+        case 2:printf("maximum number is: %d\n",b);
+               break;
+        case 3:printf("both numbers are equal \n");
+               break;
+        default:printf("invalid input");
+    }
+}
+```
+
