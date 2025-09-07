@@ -78,3 +78,43 @@ int main()
     }
 }
 ```
+## 5.Write a C program to read the age of a candidate and determine whether he is eligible to cast his/her own vote?
+```c
+#include <stdio.h>
+int main()
+{
+    int age;
+    printf("Enter the age:");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+    printf("Eligible to cast his/her vote");
+    }
+    else if(age<=18) 
+    {
+        printf("Not eligible to cast his/her vote");
+    }
+}
+```
+## 6.Write a C program to read the value of an integer m and display the value of n is 1 when m is larger than 0, 0 when m is 0 and -1 when m is less than 0.
+```c
+#include <stdio.h>
+int main()
+{
+    int M;
+    printf("Enter the value of M:");
+    scanf("%d",&M);
+    if(M>0)
+    {
+    printf("N=1");
+    }
+    else if(M==0)
+    {
+        printf("M==0");
+    }
+    else if(M<0)
+    {
+        printf("M<0");
+    }
+}
+```
