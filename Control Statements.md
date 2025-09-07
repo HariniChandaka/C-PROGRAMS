@@ -140,7 +140,7 @@ int main()
   }  
 }  
 ```
-## 8.write a C program to check whether a character is a vowel or consonant?
+## 8.Write a C program to check whether a character is a vowel or consonant?
 ```c
 #include <stdio.h>
 int main()
@@ -169,4 +169,25 @@ int main()
 }
 
 ```
+## 9.Write a c program to check whether a character is an alphabet or not?
+```c
+#include <stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter an alphabet:");
+    scanf(" %c",&ch);
+    if((ch >= 'A'&& ch<='Z')||(ch>='a'&& ch<='z'))
+    
+        {
+            printf("The character %c is an alphabet.\n",ch);
+        }
+        else
+        {
+            printf("The character %c is not an alphabet.\n",ch);
+        }
+       return 0;
+}
+```
+
 
