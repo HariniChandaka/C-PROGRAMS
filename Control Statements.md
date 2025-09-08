@@ -520,6 +520,56 @@ int main()
     return 0;
 }
 ```
+## 24.Write a c program to print all the elements of an array using a for loop? 
+```c
+#include <stdio.h>
+int main()
+{
+    int arr[100],i,n,max;
+    printf("Enter the number of elements in an array: ");
+    scanf("%d",&n);
+    
+    printf("Enter %d elements: \n",n);
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&arr[i]);
+    }
+    printf("The elements of the array are: \n");
+    for(i=0;i<n;i++)
+    {
+    printf("%d",arr[i]);
+    }
+    printf("\n");
+    return 0;
+}
+```
+##  25.Write a c program to find the sum of elements in an array using a while loop?
+```c
+#include <stdio.h>
+int main()
+{
+    int n,i=0,sum=0;
+    printf("Enter the number of elements in an array:");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter %d elements: \n",n);
+    while(i<n)
+    {
+        scanf("%d",&arr[i]);
+    }
+    
+    i=0;
+    while(i<n)
+    {
+        sum=sum+arr[i];
+        i++;
+    }
+    printf("The sum of the elements in the array is: %d\n",sum);
+    return 0;
+}
+```
+## 26  
+ 
 
 
    
