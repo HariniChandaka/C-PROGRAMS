@@ -341,5 +341,120 @@ int main()
     }
     return 0;
 }
+```
+## 16.Write a c program to calculate the sum of numbers from 1 to 100 using a while loop?
+```c
+#include<stdio.h>
+int main()
+{
+    int i=1;
+    int sum=0;
+    while(i <= 100)
+    {
+        sum += i;
+        i++;
+    }
+    printf("The sum of numbers from 1 to 100 is: %d\n",sum);
+    return 0;
+}
+```
+## 17.Write a c program to find the factorial of a given number using a for loop?
+```c
+#include <stdio.h>
+int main()
+{
+    int num,i;
+    unsigned long long factorial=1;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    if(num<0)
+    {
+        printf("factorial is not defined for negative values.\n");
+    }
+    else
+    {
+        for(i=1;i<=num;i++)
+        {
+            factorial=factorial*i;
+        }
+            printf("factorial of %d=%llu\n",num,factorial);
+    }
+    return 0;
+}
+```
+## 18.Write a c program to check whether a given number is prime or not using a while loop?
+```c
+#include<stdio.h>
+int main()
+{
+    int num,i=2,isprime=1;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    if(num<=1)
+    {
+        isprime=0;
+    }
+    else
+    {
+        while(i<=num/2);
+        {
+          if(num%i==0)
+         {
+           isprime=0;
+         }
+          i++;
+        }
+    }
+    if(isprime)
+    printf("%d is a prime number: \n",num);
+    else
+    printf("%d is not a prime number: \n",num);
+    return 0;
+}
+```
+## 19..Write a c program to find the sum of digits of a number using a while loop?
+```c
+#include <stdio.h>
+int main()
+{
+    int n,sum=0,digit;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    while(n>0)
+    {
+      digit=n%10;
+      sum=sum+digit;
+      n=n/10;
+      printf("sum of digits: %d\n",sum);
+    }
+    
+}
+```
+## 20.. Write a c program to print fibonacci series up to n terms using a for loop?
+```c
+#include <stdio.h>
+int main()
+{
+    int n,i;
+    int first=0,second=1,next;
+    printf("Enter the number of terms:");
+    scanf("%d",&n);
+    printf("fibonacci series upto %dterms : ",n);
+    for(i=0;i<=;i++)
+    {
+        printf("%d",first);
+        next=first+second;
+        first=second;
+        second=next;
+    }
+    return 0;
+}
+```
+   
+
+
+
+
+
 
 
