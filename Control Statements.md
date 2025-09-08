@@ -450,6 +450,24 @@ int main()
     return 0;
 }
 ```
+## 21.Write a c program to reverse a given number using a while loop
+```c
+#include <stdio.h>
+int main()
+{
+    int i=0,j=0,digit;
+    printf("Enter the number:");
+    scanf("%d",&i);
+    while (i>0)
+    {
+        digit=i%10;
+        j=(j*10)+digit;
+        i=i/10;
+        printf("reverse value is: %d\n",j);
+    }
+    return 0;
+}
+```
    
 
 
