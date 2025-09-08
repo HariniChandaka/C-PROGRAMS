@@ -468,6 +468,34 @@ int main()
     return 0;
 }
 ```
+## 22.Write a c program to find the largest element in an array using a for loop?
+```c
+#include <stdio.h>
+int main()
+{
+    int arr[100],i,n,max;
+    printf("Enter the number of elements in an array: ");
+    scanf("%d",&n);
+    
+    printf("Enter %d elements: \n",n);
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&arr[i]);
+    }
+     max=arr[0];
+       for(i=1;i<n;i++)
+       {
+           if(arr[i]>max)
+           {
+             max=arr[i];
+           }
+       }
+    printf("largest elements in the array is : %d\n",max);
+    
+    return 0;       
+}
+```
+
    
 
 
